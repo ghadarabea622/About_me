@@ -29,8 +29,8 @@ projects = {
 
 st.set_page_config(page_title=page_title, page_icon=page_icon)
 # --- load CSS, resume and profile picture ---
-with open(css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+# with open(css_file) as f:
+#     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 # with open(resume_file, "rb") as pdf_file:
 #     PDFbyte = pdf_file.read()
