@@ -4,10 +4,10 @@ from pathlib import Path
 import requests
 
 
-current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+current_dir = Path(_file).parent if "file_" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 profile_pic = current_dir / "assets" / "profile-pic.png"
-resume_file = current_dir / "assets" / "Resume.pdf"
+# resume_file = current_dir / "assets" / "Resume.pdf"
 
 page_title = "Digital CV | Ghada Rabea"
 page_icon = ":wave:"
@@ -24,7 +24,7 @@ projects = {
     "📝 Digit-classification - Deep Learning-based digit-classification.": "https://www.kaggle.com/code/ghadarabea/digit-classification",
     "📊 Housing-classification ": "https://www.kaggle.com/code/ghadarabea/housing",
     "📚 Spam-mails ": "https://www.kaggle.com/code/ghadarabea/fork-of-spam-mails-code",
-    "🖼️ Titanic Dataset.": "https://www.kaggle.com/code/ghadarabea/titanic"
+    "🖼 Titanic Dataset.": "https://www.kaggle.com/code/ghadarabea/titanic"
 }
 
 st.set_page_config(page_title=page_title, page_icon=page_icon)
@@ -32,8 +32,8 @@ st.set_page_config(page_title=page_title, page_icon=page_icon)
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
-with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+# with open(resume_file, "rb") as pdf_file:
+#     PDFbyte = pdf_file.read()
 
 profile_pic = Image.open(profile_pic)
 
@@ -60,8 +60,8 @@ st.write("#")
 st.subheader("Experience & Qualifications")
 st.divider()
 st.write("""
-    - ✔️ AI Engineer | Specializing in Machine Learning & Computer Vision.
-    - ✔️ problem-solving skills.
+    - ✔ AI Engineer | Specializing in Machine Learning & Computer Vision.
+    - ✔ problem-solving skills.
 """)
 
 st.write("#")
