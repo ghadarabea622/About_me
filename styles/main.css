@@ -6,12 +6,12 @@
 
 a {
     text-decoration: none;
-    color: pink !important;
+    color: #c2185b !important; /* بينك أغمق */
     font-weight: 500;
 }
 
 a:hover {
-    color: #ff69b4 !important; 
+    color: #880e4f !important; /* بينك غامق أكثر عند التحويل */
     text-decoration: none;
 }
 
